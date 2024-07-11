@@ -1,0 +1,18 @@
+----character code- 
+
+65 - 90 : - capital alphabets - A ,B, C, D.... 
+
+97 - 122 : - Small letters - a, b, c, d....
+
+---------------------------------------------------------
+
+---- to know how much time java code took to run -
+
+//at starting of code 
+long startTime = System.currentTimeMillis();
+
+// at end of code 
+long endTime = System.currentTimeMillis();
+long elapsedTime = endTime - startTime;
+System.out.println("Execution time in milliseconds: " + elapsedTime);
+

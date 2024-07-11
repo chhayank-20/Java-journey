@@ -1,0 +1,105 @@
+1) What is Object oriented? Write down difference b/w Object oriented and procedure oriented programming approach.
+
+object orineted is a style in programming that is used for better code writing , as it increases the understanding of the code and reuablity . it binds the data with methods ,which increase the safety of the data.
+The Object Oriented programming has 6 pillers : 
+(a) Abstraction - Hinding the unneccessory details from the user .                                                                           (b) Inheritence - a process in which , we extends a parent class to child class ,  for using the properties and methods of parent class. Three ways of Inheritence is (i) Single level         (ii) multi level          (iii) Hierarchical level                                                                            (c) Polymorphism  - is a concept in which we make the various implementaion of a single method . that means a method have  various forms/ implemations .
+# method overloading is a also a concept that is achved through polymorphism .     Polymorphism can be achived through 3 ways :
+(i) by changing parameter Type      (ii)  by changing the order of parameter       (iii)  by changing the number of parameter in method .                            (d)class  -  class is a block of code that contains of methods and  members .it it it is like a templete to store methods and members.                               (eg - human )                           (e) Object  - object is the refrence variable of a class to call the methods and members of a class .   (eg - name )           (f) Encapsulation 
+Benifits of using OOPS : Reuablity , Efficiet , Secure , Flexiblity 
+
+In Procedure oriented :
+(a) Secquence of steps are taken to solve a problem.
+(b) it is difficult to reuse code in it.
+(c) it is less secure .
+(d) it is mostly used in small programs .
+(e) it has functions to implemat various tasks .
+
+In Object Oriented : 
+(a) it is more secure .
+(b) it has code reuablity.
+(c) In OOPS objects are used to bind data and methods for more security .
+(d) it is used in more complex programs .
+(e) it has 6 implemations - inheritence , Abstraction, Polymorphism, Encapsulation , class, object.
+
+
+
+2) What is class and object? Explain all oop features in java with example.
+
+An Object is an instance of a class , Every object has its own instance members when it is initilized . objects have privite properties called instance members .
+object is used to call the vaious methods and members of a class. 
+there can be (n) numbers of objects of a class .
+
+OOP features :
+(a) Abstraction - Hinding the unneccessory details from the user . (eg - we Know that car runs when we give accleator ,but we dont know how it  really runs its engie and how car    works )                                                                          (b) Inheritence - a process in which , we extends a parent class to child class ,  for using the properties and methods of parent class. Three ways of Inheritence is (i) Single level         (ii) multi level          (iii) Hierarchical            level                                                                               (c) Polymorphism  - is a concept in which we make the various implementaion of a single method . that means a method have  various forms/ implemations .
+# method overloading is a also a concept that is achved through polymorphism .     Polymorphism can be achived through 3 ways :
+(i) by changing parameter Type      (ii)  by changing the order of parameter       (iii)  by changing the number of parameter in method .                            (d)class  -  class is a block of code that contains of methods and  members .it it it is like a templete to store methods and members.                               (eg - human )                           (e) Object  - object is the refrence variable of a class to call the methods and members of a class .   (eg - name )           (f) Encapsulation 
+
+
+
+3)What are the role of setter and getter method ? What is POJO In Java.
+
+Role of setter metod is to set the value of a instance member of an object , and
+Role of getter method is to get the value of an instance member of an object .
+
+POJO in full plain old java ibject , are the java objects that are not bound to any framework or library ,
+POJO (Plain Old Java Object) is a simple Java class that:
+
+Has private attributes.
+Uses getters and setters for attribute access.
+Doesn't have complex logic or inheritance requirements.
+
+
+4) How to update and retrive  the value of a particular property of an object from anothor class(Let suppose the property is private) ?
+
+Getters and Setters: Create public getter and setter methods in the class with the private property to allow controlled access.
+Pass Object as Argument: Pass the object containing the private property as an argument to the other class's method.
+Use Getters and Setters: Inside the other class's method, use the object's getter to retrieve the private property value and setter to update it.
+
+
+5)Create an Object having two properties and four behaviours
+(add,substract,multiply,divide) to perform desired operation.object must have setter and getter and keep all properties private.
+
+6) What is Constructor? List down the keypoints about constructor.
+
+A constructor in Java is a special method with the same name as the class that gets called automatically when you create an object. Here are the key points:
+Initialization: Constructors are used to initialize the object's state (set starting values for its properties).
+No return type: Constructors don't have a return type (not even void).
+Implicit vs. Explicit: Java provides a default constructor if you don't define one explicitly.
+Can have parameters: You can define constructors with parameters to allow passing initial values during object creation.
+
+
+
+7) Can we make multiple contructor inside a class? if yes then what is the need of it.Explain
+
+Java allows constructor overloading, where you can define multiple constructors in a class. Each constructor can have different parameters (number or type) to provide flexibility in object creation.
+it helps in :
+Different Initialization Options: You can create constructors with or without parameters to cater to different object initialization scenarios.
+Default Values: You can provide a constructor with default values for some parameters, allowing users to optionally specify them.
+Code Readability: It can improve code readability by making object creation clear based on the arguments provided.
+
+
+8) Private constuctor is legal or illegal ?
+
+private constructors are legal.  it helps in : 
+Control Object Creation: It prevents other classes from directly creating objects of your class, enforcing controlled initialization or use through factory methods.
+Singletons: Private constructors are often used with the singleton design pattern to ensure only one instance of a class exists.
+
+
+9) What is Singleton class explain with suitable example?
+
+A singleton class in Java ensures only one instance of that class ever exists throughout the program. It provides a global access point to that single instance.
+
+10) What is method overloading ? What are importance of method overloading ? Can we overload the main method in java ?
+Method Overloading:
+Multiple methods with the same name but different parameters (number or type).
+Allows performing the same operation on different data types or with different numbers of arguments.
+Importance:
+Improves code readability: Makes code more intuitive by using the same method name for related operations with distinct arguments.
+Flexibility: Enables using the same method name for actions that differ based on the provided data.
+Main Method Overloading:
+The main method has a specific signature (public static void main(String[] args)) to be recognized as the program entry point.
+
+
+11) How to pass as many argument to java method?
+
+with the help of var-arg.

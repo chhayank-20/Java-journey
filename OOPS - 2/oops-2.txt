@@ -1,0 +1,35 @@
+1.) What is Inheritance ? Is Java Support the multiple inheritance ? If no then why.
+
+when we use the methods of the existing class to make somthing new ...  we use the inheritance property of java ... inheritance includes a parent class (class whose prorety we use , and we don't change its properties or methods of this class) and  a child class (class in which we use the property of the parent class ).
+
+java doest not support the multiple inheritense as it may lead to Amiguity error... if a child class have more then one parent and those parent share a same method then it makes java compiler confuse to decide which one to call... and thats why java dosent have multiple parent concept . however, multiple child can be made from the single parent .
+
+
+2) What is method overriding ? List down the difference between method overloading and method overriding.
+
+method overloading means to make a method of same name but can have diferent parameters . therefore, giving different results when we call one of it . it takes place in a same class only .  it has polymorphism .
+To achive method overloading there are 3 ways :
+a. by changing parameters.
+b. by changing order of parameters.
+c. by changing no. of parameters.
+
+Method overriding is a way to achive the different implementaion of a method having same signature. it takes place between 2 classes , parent class and child class . therefore its mendatory to have inheritance in the process to achive method overriding . 
+
+difference: 
+a. method overriding require signature to be same , same parameters and all.. where method overloading requires only name of method to be same.
+b. method overriding require inheritance , whereas method overloading dosent.
+
+
+3) What is the role of return type in case of method overloading and method overriding?
+
+In method overloading the return type can be different , whereas In method overriding the return type must be same. 
+
+
+4) Can we Override static, private method?
+
+No , neither the static method nor the private method can be overriden . overriding requires Inheritance and the static methods are not inheritated in child class , and private methods are not visible in child class. therefore bith cannot be orverridden .
+
+
+
+
+
