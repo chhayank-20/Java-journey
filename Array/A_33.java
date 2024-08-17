@@ -19,6 +19,7 @@ public static int binaryFind(int arr[] , int target){
     }else if(target==mid){
         return mid;
     }
+    return -1;
 }
 
 public static void main (String args[]){
@@ -29,6 +30,6 @@ public static void main (String args[]){
     int b=binaryFind(array, a);
     System.out.println(b);
 }
-
+  
 }
 

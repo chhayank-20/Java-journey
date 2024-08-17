@@ -1,0 +1,87 @@
+Q.1 : what do wrapper classes do ?
+wrapper classes convert the primitive datatypes to objects , so that different operations can be performed on it. we can also convert objects to primitive datatypes . 
+this process are called Autoboxing and Unboxing .
+
+Q.2 : 2. List the eight primitive data types in Java.
+int , short , byte , long , float , double , char  ,String ; 
+
+Q.3  Why do we need Wrapper classes?
+To convert the primitive datatypes to objects for performing operations on it .
+
+Q.4. What is autoboxing?
+The process of converting a primitive data to an object is called autoboxing , it is done by wrapper classes in java . 
+
+Q.5. What is unboxing?
+The process of converting objects to primitive data in java through wrapper classes is called unboxing.
+
+Q.6. Explain the purpose of the valueOf() method in Wrapper classes.
+There are 2 purpose of method valueOf() in java : 
+1. Rather then Character class of Wrapper classes , every other class of it has a static method valueOf() which converts the primitive data to objetct . other classes like : Integer , Short , Byte, Float, Double , Long, String .
+2. this method is used for unboxig , which means to convert the object back to primitive data .
+
+Q.7. Differentiate between == and equals() when comparing Wrapper objects.
+== operator gives the boolean value which tells weather the Two objects are pointing to same memory location or not ?
+.equals() method also gives boolean value , which tells weather the data of the object is same .
+
+Q.8. Can you explain the significance of the hashCode() method
+in Wrapper classes?
+The hashCode() method gives a unique inteer hashcode value based on the objects state.  it helps in the fast retrivel of objects in collections , like Hashmap , Hashset ,HashTable .  this method is overided for proper working of these collections .
+The hashcode() method ensures that object with same values get same hashcode .
+
+Q.9. How can you convert a Wrapper object to a primitive data type?
+To convert a wapper object to primitive datatype, we use different methods like :  for integer : .intValue();
+for double  : .doubleValue();   (eg: obj.doubleValue();)
+for float   : .floatValue() ;  ..... etc .
+
+Q.10 .Discuss the parseInt() method in the Integer class.
+The parseInt() method of the integer class is used to convert string to int ( primitive data ).
+
+Q.11. Explain the compareTo() method in the Comparable interface.
+compareTo() method is a part of comparable interface in java , which compares the objects and give outcome as an integer.  Outcome of obj1.compareTo(obj2); : 
++ve  :  means the obj1 is greater . 
+if obj1 and obj2 are string then it will compare them through their ASCII values .
+-ve  :  means the obj2 is greater .
+0    :  means value of both is same .
+
+Q.12. How do you check if a given string is a valid representation of a particular primitive type?
+By using the .isPrimitive() method. it gives boolean value , true means the object is a primitive datatype , and false means not a primitive datatype.
+we can also use to string method , if it dosent throw exceptions , that means we successfully converted object to primitive string.
+
+Q. 13. Explain the purpose of the Boolean class in Java.
+Boolean class is one of the wrapper classes in java. it convert the primitive boolean value to object. 
+
+Q.15. How can you convert a boolean primitive to a Boolean object?
+By the use of wrapper class. by using the .valueOf() method of  Boolean class.
+eg: Boollean bool = .valueOf(true);
+
+Q.16. Explain the toString() method in Wrapper classes. 
+.toString() method is used to convert the object to string , which is useful for printing the data . 
+
+Q.20. How can you convert a Wrapper object to a String?
+we can convert a wrapper object to a string by 2 ways : 
+1. by using the .toString() method .
+2. by concatenating the object with an empty string . 
+
+Q.21. Explain the toBinaryString() method in the Integer class.
+The .toBinaryString() method convets the Integer class (object) to the string representation of base2 Integer value . 
+
+Q.22. What is the purpose of the MAX_VALUE and MIN_VALUE constants in Wrapper classes?
+The constants MAX_VALUE and MIN_VALUE defined in Integer class in java. value of MAX_VALUE is maximum value of (primitive datatype) integer  and MIN_VALUE has the minimum value of (primitive datatype) integer. 
+
+Q.23. Discuss the parsexxx() methods in Wrapper classes.
+There are 7 types of parse method , and these methods are used to convert the string data to other primitive data . 
+eg : .parseInt() method to convert to integer. 
+.parseDouble() method to converet ti double datatype.
+.. and ohters.
+
+Q.24. How can you create a BigInteger object from a String?
+BigInteger is a class of math package  in java . and this class provides methods to convert the String to different number system , like : binary, decimal, number,octal, hexadecimal.
+
+Q.26. Explain the valueOf() method in the BigDecimal class.
+The valueOf() method is of BigDecimal class of math package of java is used to make long decimal objects. it is used for big calculations like financial calculations for correctness.
+The valueOf() method takes long datatype as parameter and convert that into BigDecimal object .
+we can also give parameter for how many decimal point we want our BigDecimal object to be .
+
+Q.28. Can you use Wrapper classes in a switch statement?
+yes , we can use wapper classes i switch statement . but we can only use : Byte , Character , Integer and Short.
+

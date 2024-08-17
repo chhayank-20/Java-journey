@@ -1,4 +1,4 @@
-package Demo;
+// package Demo;
 
 @FunctionalInterface interface I{
     void show (int a );
